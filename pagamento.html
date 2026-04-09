@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Pagamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+  <main class="page-shell">
+    <!-- Card principal do checkout -->
+    <section class="checkout-card" aria-labelledby="checkout-title">
+      <a class="back-button" href="index.html">Voltar para a pagina inicial</a>
+
+      <div class="checkout-copy">
+        <p class="eyebrow">Pagamento seguro</p>
+        <h1 id="checkout-title">Finalizar Pagamento</h1>
+        <p class="intro">
+          Revise os dados abaixo para concluir sua compra com praticidade e seguranca.
+        </p>
+      </div>
+
+      <div class="checkout-grid">
+        <!-- Formulario de pagamento -->
+        <form class="payment-form">
+          <div class="field-group">
+            <label for="card-name">Nome no cartao</label>
+            <input id="card-name" name="card-name" type="text" placeholder="Como esta no cartao">
+          </div>
+
+          <div class="field-group">
+            <label for="card-number">Numero do cartao</label>
+            <input id="card-number" name="card-number" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000">
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="expiry-date">Data de validade</label>
+              <input id="expiry-date" name="expiry-date" type="text" placeholder="MM/AA">
+            </div>
+
+            <div class="field-group">
+              <label for="cvv">CVV</label>
+              <input id="cvv" name="cvv" type="password" inputmode="numeric" placeholder="123">
+            </div>
+          </div>
+
+          <button type="submit" class="confirm-button">Confirmar Pagamento</button>
+        </form>
+
+        <!-- Resumo lateral da compra -->
+        <aside class="summary-card" aria-label="Resumo da compra">
+          <p class="summary-label">Resumo da compra</p>
+          <div class="product-block">
+            <div>
+              <span class="product-title">Nome do produto</span>
+              <p class="product-name">Assinatura Premium</p>
+            </div>
+            <span class="product-price">R$ 149,90</span>
+          </div>
+
+          <div class="summary-divider"></div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <strong>R$ 149,90</strong>
+          </div>
+
+          <p class="summary-note">
+            Ambiente protegido com criptografia e processamento confiavel.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
