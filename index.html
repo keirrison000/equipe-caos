@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Moda & Estilo em Verde Pastel</title>
+    <!-- CSS da página inicial -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones Font Awesome (para o carrinho, usuário, menu) -->
+    <a href="#carrinho.html"></a>
+    <a href="#pagamento.html"></a>
+    <a href="#login.html"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">MODA<span>VERDE</span></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#feminino">Feminino</a></li>
+            <li><a href="#sustentavel">Sustentável</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#" aria-label="Pesquisar"><i class="fas fa-search"></i></a>
+            <a href="#" aria-label="Carrinho"><i class="fas fa-shopping-cart"></i> <span class="cart-count">2</span></a>
+            <!-- Linkando para a página de login que salvamos -->
+            <a href="login.html" aria-label="Login"><i class="fas fa-user"></i> Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Seção Principal) -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Sinta a Leveza do Estilo</h1>
+            <p>Descubra nossa nova coleção de roupas ecologicamente corretas com tons pastéis, modelagens confortáveis e
+                tecidos orgânicos.</p>
+            <a href="#" class="btn-primary">Explorar Coleção</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800&auto=format&fit=crop"
+                alt="Mulher usando roupa verde pastel estilosa">
+        </div>
+    </header>
+
+    <!-- Destaques -->
+    <section class="featured-section" id="novidades">
+        <div class="section-title">
+            <h2>Novidades da Estação</h2>
+            <p>Peças selecionadas para você brilhar com delicadeza e estilo.</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge">Novo</span>
+                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=500&auto=format&fit=crop"
+                        alt="Vestido Verde Pastel">
+                    <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>Vestido Flora Primavera</h3>
+                    <p class="price">R$ 189,90</p>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=500&auto=format&fit=crop"
+                        alt="Sapatos Elegantes">
+                    <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>Sapatilha Nuvem Branca</h3>
+                    <p class="price">R$ 129,90</p>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge sale">-20%</span>
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=500&auto=format&fit=crop"
+                        alt="Acessórios Estilosos">
+                    <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>Tênis Urban Esmeralda</h3>
+                    <p class="price"><span class="old-price">R$ 299,90</span> R$ 239,90</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-all">
+            <a href="#novidades" class="btn-secondary">Ver Todas as Novidades <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Coleção Feminina -->
+    <section class="featured-section" id="feminino" style="background-color: var(--secondary-color);">
+        <div class="section-title">
+            <h2>Coleção Feminina</h2>
+            <p>Elegância e conforto para todas as ocasiões.</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Produto 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500&auto=format&fit=crop"
+                        alt="Look Casual Feminino">
+                    <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>Conjunto Casual Leve</h3>
+                    <p class="price">R$ 219,90</p>
+                </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=500&auto=format&fit=crop"
+                        alt="Blusa Feminina Pastel">
+                    <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>Blusa Básica de Algodão</h3>
+                    <p class="price">R$ 89,90</p>
+                </div>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="badge">Esgotando</span>
+                    <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?q=80&w=500&auto=format&fit=crop"
+                        alt="Calça Feminina">
+                    <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                </div>
+                <div class="product-info">
+                    <h3>Calça Alfaiataria Sustentável</h3>
+                    <p class="price">R$ 159,90</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-all">
+            <a href="#feminino" class="btn-secondary" style="background-color: var(--white);">Explorar Categoria <i
+                    class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Banner Sustentabilidade -->
+    <section class="banner-sustainability" id="sustentavel">
+        <div class="banner-content">
+            <h2>Moda Consciente. Moda Positiva.</h2>
+            <p>Utilizamos materiais recicláveis e algodão 100% orgânico para garantir o seu conforto e a saúde do nosso
+                planeta.</p>
+            <a href="#sustentavel" class="btn-outline">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">MODA<span>VERDE</span></div>
+            <p>Vestindo você de paz, conforto e muito estilo.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Moda Verde. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
