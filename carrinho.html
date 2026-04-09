@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipe Caos | Carrinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#" class="site-brand" aria-label="StyleStore - página inicial">Equipe Caos</a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a class="site-nav__link" href="#">Home</a>
+        <a class="site-nav__link" href="#">Loja</a>
+        <a class="site-nav__link" href="#">Contato</a>
+        <a class="site-nav__link site-nav__link--active" href="#" aria-current="page">Carrinho</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cart-page" aria-labelledby="cart-heading">
+      <div class="cart-page__content">
+        <header class="cart-page__header">
+          <p class="badge">Seu carrinho</p>
+          <h1 id="cart-heading" class="cart-page__title">Moda com estilo, pronta para finalizar</h1>
+          <p class="cart-page__description">
+            Estrutura pensada para integração futura, com itens organizados como componentes reutilizáveis
+            e prontos para receber dados dinâmicos.
+          </p>
+        </header>
+
+        <section class="cart-section" aria-labelledby="cart-items-heading">
+          <div class="cart-section__head">
+            <h2 id="cart-items-heading" class="cart-section__title">Itens no carrinho</h2>
+            <p class="cart-section__meta">3 produtos adicionados</p>
+          </div>
+
+          <!-- Lista preparada para renderização dinâmica futura -->
+          <div class="cart-list" role="list" aria-label="Lista de produtos do carrinho">
+            <article
+              class="cart-item"
+              role="listitem"
+              data-product-id="sku-blazer-essence"
+              data-product-name="Blazer Essence"
+            >
+              <div class="cart-item__media">
+                <img
+                  src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+                  alt="Blazer feminino verde pastel"
+                  class="cart-item__image"
+                >
+              </div>
+
+              <div class="cart-item__body">
+                <div class="cart-item__main">
+                  <p class="cart-item__category">Alfaiataria</p>
+                  <h3 class="cart-item__name">Blazer Essence</h3>
+
+                  <dl class="cart-item__attributes">
+                    <div class="cart-item__attribute">
+                      <dt>Tamanho</dt>
+                      <dd>M</dd>
+                    </div>
+                    <div class="cart-item__attribute">
+                      <dt>Cor</dt>
+                      <dd>Verde sálvia</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div class="cart-item__aside">
+                  <p class="cart-item__price-label">Preço unitário</p>
+                  <strong class="cart-item__price">R$ 289,90</strong>
+
+                  <div class="cart-item__actions">
+                    <div class="quantity-control" aria-label="Controle visual de quantidade">
+                      <button type="button" class="quantity-control__button" aria-label="Diminuir quantidade">-</button>
+                      <span class="quantity-control__value" aria-label="Quantidade atual">1</span>
+                      <button type="button" class="quantity-control__button" aria-label="Aumentar quantidade">+</button>
+                    </div>
+
+                    <button type="button" class="cart-item__remove">Remover</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="cart-item"
+              role="listitem"
+              data-product-id="sku-vestido-aura"
+              data-product-name="Vestido Aura"
+            >
+              <div class="cart-item__media">
+                <img
+                  src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+                  alt="Vestido midi branco"
+                  class="cart-item__image"
+                >
+              </div>
+
+              <div class="cart-item__body">
+                <div class="cart-item__main">
+                  <p class="cart-item__category">Vestidos</p>
+                  <h3 class="cart-item__name">Vestido Aura</h3>
+
+                  <dl class="cart-item__attributes">
+                    <div class="cart-item__attribute">
+                      <dt>Tamanho</dt>
+                      <dd>P</dd>
+                    </div>
+                    <div class="cart-item__attribute">
+                      <dt>Cor</dt>
+                      <dd>Off-white</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div class="cart-item__aside">
+                  <p class="cart-item__price-label">Preço unitário</p>
+                  <strong class="cart-item__price">R$ 219,90</strong>
+
+                  <div class="cart-item__actions">
+                    <div class="quantity-control" aria-label="Controle visual de quantidade">
+                      <button type="button" class="quantity-control__button" aria-label="Diminuir quantidade">-</button>
+                      <span class="quantity-control__value" aria-label="Quantidade atual">2</span>
+                      <button type="button" class="quantity-control__button" aria-label="Aumentar quantidade">+</button>
+                    </div>
+
+                    <button type="button" class="cart-item__remove">Remover</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="cart-item"
+              role="listitem"
+              data-product-id="sku-bolsa-urban-line"
+              data-product-name="Bolsa Urban Line"
+            >
+              <div class="cart-item__media">
+                <img
+                  src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+                  alt="Bolsa preta minimalista"
+                  class="cart-item__image"
+                >
+              </div>
+
+              <div class="cart-item__body">
+                <div class="cart-item__main">
+                  <p class="cart-item__category">Acessórios</p>
+                  <h3 class="cart-item__name">Bolsa Urban Line</h3>
+
+                  <dl class="cart-item__attributes">
+                    <div class="cart-item__attribute">
+                      <dt>Material</dt>
+                      <dd>Couro sintético</dd>
+                    </div>
+                    <div class="cart-item__attribute">
+                      <dt>Cor</dt>
+                      <dd>Preto</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div class="cart-item__aside">
+                  <p class="cart-item__price-label">Preço unitário</p>
+                  <strong class="cart-item__price">R$ 179,90</strong>
+
+                  <div class="cart-item__actions">
+                    <div class="quantity-control" aria-label="Controle visual de quantidade">
+                      <button type="button" class="quantity-control__button" aria-label="Diminuir quantidade">-</button>
+                      <span class="quantity-control__value" aria-label="Quantidade atual">1</span>
+                      <button type="button" class="quantity-control__button" aria-label="Aumentar quantidade">+</button>
+                    </div>
+
+                    <button type="button" class="cart-item__remove">Remover</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <aside class="order-summary" aria-labelledby="order-summary-heading">
+        <p class="badge">Resumo</p>
+        <h2 id="order-summary-heading" class="order-summary__title">Seu pedido</h2>
+
+        <div class="order-summary__body">
+          <div class="order-summary__row">
+            <span>Subtotal</span>
+            <strong>R$ 909,60</strong>
+          </div>
+          <div class="order-summary__row">
+            <span>Frete</span>
+            <strong>R$ 24,90</strong>
+          </div>
+          <div class="order-summary__row order-summary__row--total">
+            <span>Total</span>
+            <strong>R$ 934,50</strong>
+          </div>
+        </div>
+
+        <button type="button" class="order-summary__checkout">Finalizar Compra</button>
+        <p class="order-summary__note">Entrega estimada entre 3 e 5 dias úteis para capitais.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Equipe Caos</p>
+    </div>
+  </footer>
+</body>
+</html>
